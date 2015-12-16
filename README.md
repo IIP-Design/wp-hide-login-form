@@ -1,6 +1,12 @@
 # Hide Login Form
 A WordPress plugin to hide the login form on the login page.
 
+##DETAILS
+Plugin Name: Hide Login Form
+Description: A WordPress plugin to hide the login form on the login page.
+Author: Scott Gustas
+Version: 1.0
+
 ##LICENSE
 This project constitutes a work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105.
 

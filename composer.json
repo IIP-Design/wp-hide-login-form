@@ -1,0 +1,16 @@
+{
+    "name": "usstatedept/wp-hide-login-form",
+    "type": "wordpress-plugin",
+    "description" : "A WordPress plugin to hide the login form on the login page.",
+    "authors": [
+        {
+            "name": "Office of Design, Bureau of International Information Programs",
+            "email": "gustassj@america.gov"
+        }
+    ],
+    "minimum-stability": "stable",
+    "version": "1.0",
+    "require": {
+       "composer/installers": "~1.0"
+    }
+}
