@@ -1,14 +1,16 @@
 # Hide Login Form
-A WordPress plugin to hide the login form on the login page.
+A WordPress plugin to hide the login form on the login page when the Google Apps Login plugin is active.
+
+This is a companion plugin to the Google Apps Login plugin. Because this plugin hides the login form, another method of logging in should be present. This plugin will check if the Google Apps Login is activated before hiding the default login form.
 
 ##DETAILS
 Plugin Name: Hide Login Form
 
-Description: A WordPress plugin to hide the login form on the login page.
+Description: A WordPress plugin to hide the login form on the login page when the Google Apps Login plugin is active.
 
 Author: Scott Gustas
 
-Version: 1.0
+Version: 1.0.1
 
 ##LICENSE
 This project constitutes a work of the United States Government and is not subject to domestic copyright protection under 17 USC § 105.
