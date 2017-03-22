@@ -1,5 +1,5 @@
 {
-    "name": "usstatedept/wp-hide-login-form",
+    "name": "iip-design/wp-hide-login-form",
     "type": "wordpress-plugin",
     "description" : "A WordPress plugin to hide the login form on the login page when the Google Apps Login plugin is active.",
     "authors": [
