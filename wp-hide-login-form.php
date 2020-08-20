@@ -19,3 +19,21 @@ function custom_login() {
     wp_enqueue_style( 'custom-login-styles' );
 }
 add_action('login_head', 'custom_login');
+/**
+ * Checks whether the current WordPress install is a legacy version (lower than 5.3).
+ *
+ * @return boolean Whether the current WordPress version is less than 5.3.
+ *
+ * @since 1.1.0
+ */
+function check_for_legacy() {
+  global $wp_version;
+
+  $minor_version = substr( $wp_version, 0, 3 );
+  $float_version = floatval( $minor_version );
+
+  $is_legacy = $float_version < 5.3 ? true : false;
+
+  return $is_legacy;
+};
+
