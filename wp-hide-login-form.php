@@ -1,9 +1,13 @@
 <?php
 /**
  * Plugin Name: Hide Login Form
+ * Plugin URI: https://github.com/IIP-Design/wp-hide-login-form
  * Description: A WordPress plugin to hide the login form on the login page when the Google Apps Login plugin is active.
- * Author: Scott Gustas
  * Version: 1.0.1
+ * Author: Scott Gustas, Marek Rewers, U.S. Department of State - Global Public Affairs Digital Lab
+ * Text Domain: wp-hide-login
+ *
+ * @package WP_Hide_Login
  */
 
 function custom_login() {
