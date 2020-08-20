@@ -10,15 +10,30 @@
  * @package WP_Hide_Login
  */
 
-function custom_login() {
-  //If the Google Apps Login is activated, let's hide the login form
-  include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-  wp_register_style( 'custom-login-styles', plugins_url('custom-login-styles.css', __FILE__) );
-  $requiredplugin = 'google-apps-login/google_apps_login.php';
-  if ( is_plugin_active($requiredplugin) )
-    wp_enqueue_style( 'custom-login-styles' );
+/**
+ * Register and enqueue the a custom stylesheet to hide the WP login form.
+ * Only executes if the Google Apps Login plugin is active.
+ *
+ * @since 1.0.0
+ */
+function set_custom_login() {
+  // Set the plugin version and path to the Google Apps Login plugin.
+  $plugin_version  = '1.0.1';
+  $required_plugin = 'google-apps-login/google_apps_login.php';
+
+  include_once ABSPATH . 'wp-admin/includes/plugin.php';
+
+  // Determine which stylesheet to register.
+  $styles = check_for_legacy() ? 'hide-login-legacy.css' : 'hide-login.css';
+
+  wp_register_style( 'gpalab-login-styles', plugins_url( 'styles/' . $styles, __FILE__ ), array(), $plugin_version );
+
+  // Enqueue custom login styles only if Google Apps Login plugin is active.
+  if ( is_plugin_active( $required_plugin ) ) {
+    wp_enqueue_style( 'gpalab-login-styles' );
+  }
 }
-add_action('login_head', 'custom_login');
+
 /**
  * Checks whether the current WordPress install is a legacy version (lower than 5.3).
  *
@@ -37,3 +52,5 @@ function check_for_legacy() {
   return $is_legacy;
 };
 
+// Initialize the custom stylesheet on the login page.
+add_action( 'login_head', 'set_custom_login' );
