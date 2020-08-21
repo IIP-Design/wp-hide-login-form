@@ -14,7 +14,6 @@
     }
   ],
   "minimum-stability": "stable",
-  "version": "1.0.1",
   "require": {
     "composer/installers": "~1.0"
   },
