@@ -14,6 +14,10 @@ _This sections lists changes committed since most recent release_
 - Check the current WordPress version and load one of two login stylesheets depending on whether or not the version is less than 5.3
 - PHP linting with PHP Code Sniffer
 
+### Changed:
+
+- Tidied up readme files
+
 ## [v1.0.1](https://github.com/IIP-Design/wp-hide-login-form/compare/v1.0.0...v1.0.1) - 2015.12.16
 
 ### Changed:
