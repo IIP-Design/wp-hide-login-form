@@ -4,8 +4,13 @@
   "description": "A WordPress plugin to hide the login form on the login page when the Google Apps Login plugin is active.",
   "authors": [
     {
-      "name": "Office of Design, Bureau of International Information Programs",
-      "email": "gustassj@america.gov"
+      "name": "Scott Gustas, U.S. Department of State - Global Public Affairs Digital Lab",
+      "role": "Developer"
+    },
+    {
+      "name": "Marek Rewers, U.S. Department of State - Global Public Affairs Digital Lab",
+      "email": "rewersmc@america.gov",
+      "role": "Developer"
     }
   ],
   "minimum-stability": "stable",
