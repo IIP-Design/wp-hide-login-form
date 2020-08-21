@@ -26,7 +26,7 @@ function set_custom_login() {
   // Determine which stylesheet to register.
   $styles = check_for_legacy() ? 'hide-login-legacy.css' : 'hide-login.css';
 
-  wp_register_style( 'gpalab-login-styles', plugins_url( 'styles/' . $styles, __FILE__ ), array(), $plugin_version );
+  wp_register_style( 'gpalab-login-styles', plugins_url( 'dist/' . $styles, __FILE__ ), array(), $plugin_version );
 
   // Enqueue custom login styles only if Google Apps Login plugin is active.
   if ( is_plugin_active( $required_plugin ) ) {

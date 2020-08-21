@@ -1,0 +1,17 @@
+@mixin form-padding {
+  padding-bottom: 10px;
+}
+
+@mixin nav-display {
+  p#nav {
+    display: none;
+  }
+}
+
+@mixin shared-display {
+  h3.galogin-or,
+  p.forgetmenot,
+  p.submit {
+    display: none;
+  }
+}

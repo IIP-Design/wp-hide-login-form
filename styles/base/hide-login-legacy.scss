@@ -1,0 +1,14 @@
+@import '../mixins/shared.scss';
+
+body.login div#login {
+  @include nav-display;
+
+  form#loginform {
+    @include form-padding;
+    @include shared-display;
+
+    p label {
+      display: none;
+    }
+  }
+}
