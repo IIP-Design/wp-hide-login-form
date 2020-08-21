@@ -1,6 +1,6 @@
 {
   "name": "wp-hide-login-form",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A WordPress plugin to hide the login form on the login page when the Google Apps Login plugin is active.",
   "scripts": {
     "css": "node-sass styles/base -o dist --output-style compressed"
